@@ -1,0 +1,7 @@
+node_modules/*
+dist/*
+package.json
+package-lock.json
+lib
+examples
+src/protocols/protobuf/*

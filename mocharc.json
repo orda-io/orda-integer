@@ -1,0 +1,9 @@
+{
+    "require": [
+        "ts-node/register"
+    ],
+    "package": "./package.json",
+    "colors": true,
+    "full-trace": true,
+    "sort": true
+}
