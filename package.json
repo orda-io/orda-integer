@@ -1,6 +1,6 @@
 {
   "name": "@orda-io/orda-integer",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Orda Integer: a TypeScript/Javascript library compatible with the integer types of other languages",
   "scripts": {
     "clean": "rimraf dist",
