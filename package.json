@@ -9,8 +9,8 @@
     "prettier": "prettier --config .prettierrc.json --write ./src/**/*.{json,ts,tsx}",
     "build:dev": "npm run clean && webpack --config=./webpack.dev.js --stats-all --profile --bail",
     "build:prod": "npm run clean && webpack --config=./webpack.prod.js --stats-all --profile --bail",
-    "prepare": "npm run build:prod",
-    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
+    "prepare": "npm run build:prod && npm version patch",
+    "postpublish": "bash postpublish.sh"
   },
   "main": "dist/orda-integer.js",
   "types": "dist/index.d.ts",
