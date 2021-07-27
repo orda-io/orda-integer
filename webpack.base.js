@@ -15,7 +15,7 @@ exports.config = {
     rules: [
       {
         test: /\.ts(x?)$/,
-        exclude: [/node_modules/, root("test")],
+         exclude: [/node_modules/, root("test/")],
         use: [
           {
             loader: "ts-loader"
