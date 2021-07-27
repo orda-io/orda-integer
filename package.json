@@ -9,8 +9,7 @@
     "prettier": "prettier --config .prettierrc.json --write ./src/**/*.{json,ts,tsx}",
     "build:dev": "npm run clean && webpack --config=./webpack.dev.js --stats-all --profile --bail",
     "build:prod": "npm run clean && webpack --config=./webpack.prod.js --stats-all --profile --bail",
-    "prepare": "npm run build:prod && npm version patch",
-    "postpublish": "bash postpublish.sh"
+    "prepare": "npm run build:prod && npm version patch -m \"https://www.npmjs.com/package/@orda-io/orda-integer/v/%s\""
   },
   "main": "dist/orda-integer.js",
   "types": "dist/index.d.ts",
