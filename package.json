@@ -22,7 +22,7 @@
     "url": "git+https://github.com/orda-io/orda-integer.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [
     "typescript",
